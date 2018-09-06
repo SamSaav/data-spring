@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecera"></header>
+<main>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" id="formulario">
+            <form action="http://localhost:1000/zoo/animal" method="POST">
+                <label>
+                    Zoo:
+                    <select name="zoo_id" id="zoo_id"></select>
+                </label>
+                <label>
+                    Especie:
+                    <input type="text" name="especie" id="especie">
+                </label>
+                <label>
+                    Cantidad:
+                    <input type="number" name="cantidad" id="cantidad">
+                </label>
+                <button type="submit" id="enviar" onClick="enviarForm()">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <form action=""></form>
+    <section></section>
+</main>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/post.js"></script>
+<!-- <script type="text/javascript" src="js/script2.js"></script> -->
+</body>
+</html>
